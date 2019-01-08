@@ -7,6 +7,7 @@
 #include <map>
 #include <fstream>
 #include <sstream>
+#include <memory>
 #include <dirent.h>
 
 typedef unsigned long long int uInt64;
