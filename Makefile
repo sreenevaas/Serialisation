@@ -8,7 +8,7 @@ Sources=DataAnalysis.cpp \
 
 Executable=DataAnalysis
 
-CXXFlags=-c -Wall -g -Iinc
+CXXFlags=-c -Wall -g -Iinc -std=c++11
 LDFlags=
 ObjectDir=obj/
 SourceDir=src/
@@ -28,4 +28,5 @@ $(ObjectDir)%.o: $(SourceDir)%.cpp
 	$(CXX) $(CXXFlags) $< -o $@
 
 clean:
-	$(RM) $(CObjects) 
+	$(RM) $(CObjects) $(CExecutable) 
+	$(RM) ./bin/*.bin
